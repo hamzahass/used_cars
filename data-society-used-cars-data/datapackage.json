@@ -1,0 +1,169 @@
+{
+    "name": "data-society_used-cars-data",
+    "title": "Used Cars Data",
+    "description": "Over 370000 used cars scraped with Scrapy from Ebay-Kleinanzeigen.\n\nThe content of the data is in german, so one has to translate it first if one can not speak german. Those fields are included:\n\n   * dateCrawled : when this ad was first crawled, all field-values are taken from this date\n   * name : \"name\" of the car\n   * seller : private or dealer \n   * offerType\n   * price : the price on the ad to sell the car\n   * abtest\n   * vehicleType\n   * yearOfRegistration : at which year the car was first registered\n   * gearbox\n   * powerPS : power of the car in PS\n   * model\n   * kilometer : how many kilometers the car has driven\n   * monthOfRegistration : at which month the car was first registered\n   * fuelType\n   * brand\n   * notRepairedDamage : if the car has a damage which is not repaired yet\n   * dateCreated : the date for which the ad at ebay was created\n   * nrOfPictures : number of pictures in the ad\n   * postalCode\n   * lastSeenOnline : when the crawler saw this ad last online\n\nThe fields lastSeen and dateCrawled could be used to estimate how long a car will be at least online before it is sold. Regression on average Price per Year based on this dataset Happy Coding!\n\nSource: Kaggle\n\nhttps://www.kaggle.com/orgesleka/used-cars-database",
+    "homepage": "https://data.world/data-society/used-cars-data",
+    "resources": [
+        {
+            "name": "autos",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "datecrawled",
+                        "title": "dateCrawled",
+                        "type": "datetime",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                        "dwSourceId": "datecrawled"
+                    },
+                    {
+                        "name": "name",
+                        "title": "name",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "name"
+                    },
+                    {
+                        "name": "seller",
+                        "title": "seller",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "seller"
+                    },
+                    {
+                        "name": "offertype",
+                        "title": "offerType",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "offertype"
+                    },
+                    {
+                        "name": "price",
+                        "title": "price",
+                        "type": "integer",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+                        "dwSourceId": "price"
+                    },
+                    {
+                        "name": "abtest",
+                        "title": "abtest",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "abtest"
+                    },
+                    {
+                        "name": "vehicletype",
+                        "title": "vehicleType",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "vehicletype"
+                    },
+                    {
+                        "name": "yearofregistration",
+                        "title": "yearOfRegistration",
+                        "type": "integer",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+                        "dwSourceId": "yearofregistration"
+                    },
+                    {
+                        "name": "gearbox",
+                        "title": "gearbox",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "gearbox"
+                    },
+                    {
+                        "name": "powerps",
+                        "title": "powerPS",
+                        "type": "integer",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+                        "dwSourceId": "powerps"
+                    },
+                    {
+                        "name": "model",
+                        "title": "model",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "model"
+                    },
+                    {
+                        "name": "kilometer",
+                        "title": "kilometer",
+                        "type": "integer",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+                        "dwSourceId": "kilometer"
+                    },
+                    {
+                        "name": "monthofregistration",
+                        "title": "monthOfRegistration",
+                        "type": "integer",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+                        "dwSourceId": "monthofregistration"
+                    },
+                    {
+                        "name": "fueltype",
+                        "title": "fuelType",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "fueltype"
+                    },
+                    {
+                        "name": "brand",
+                        "title": "brand",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "brand"
+                    },
+                    {
+                        "name": "notrepaireddamage",
+                        "title": "notRepairedDamage",
+                        "type": "string",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#string",
+                        "dwSourceId": "notrepaireddamage"
+                    },
+                    {
+                        "name": "datecreated",
+                        "title": "dateCreated",
+                        "type": "datetime",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                        "dwSourceId": "datecreated"
+                    },
+                    {
+                        "name": "nrofpictures",
+                        "title": "nrOfPictures",
+                        "type": "boolean",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#boolean",
+                        "dwSourceId": "nrofpictures"
+                    },
+                    {
+                        "name": "postalcode",
+                        "title": "postalCode",
+                        "type": "integer",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#integer",
+                        "dwSourceId": "postalcode"
+                    },
+                    {
+                        "name": "lastseen",
+                        "title": "lastSeen",
+                        "type": "datetime",
+                        "rdfType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                        "dwSourceId": "lastseen"
+                    }
+                ]
+            },
+            "path": "data/autos.csv",
+            "format": "csv"
+        },
+        {
+            "name": "original/autos.csv",
+            "path": "original/autos.csv",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "bytes": 68439217
+        }
+    ],
+    "keywords": [
+        "data society",
+        "used cars",
+        "classification"
+    ]
+}
